@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 07eb6767543e1f14db3be974a95926d7
+timeCreated: 1495819000
+licenseType: Store
+NativeFormatImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 92811
+  packageName: Beauty and the Brutes (Character Edition)
+  packageVersion: 2.0
+  assetPath: Assets/AllStarCharacterLibrary/Characters/Spike/materials/Spike.mat
+  uploadId: 220426

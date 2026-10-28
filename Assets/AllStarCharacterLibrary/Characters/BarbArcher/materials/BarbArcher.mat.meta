@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: d5c80f4dda712d340921c2487d90ab4c
+timeCreated: 1495818981
+licenseType: Store
+NativeFormatImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 92811
+  packageName: Beauty and the Brutes (Character Edition)
+  packageVersion: 2.0
+  assetPath: Assets/AllStarCharacterLibrary/Characters/BarbArcher/materials/BarbArcher.mat
+  uploadId: 220426

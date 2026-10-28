@@ -1,0 +1,4 @@
+repository "Catfighter-The-Ultimate-Female-Fighting-Game/Catfighter-The-Ultimate-Female-Fighting-Game@16767632697966@cloud"
+  path "/"
+    br "/main"
+    co "/main"

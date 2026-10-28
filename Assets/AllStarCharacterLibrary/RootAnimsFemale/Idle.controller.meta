@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 646d79d6dea0063449bc7b7eaba6f3ad
+timeCreated: 1513497498
+licenseType: Store
+NativeFormatImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 92811
+  packageName: Beauty and the Brutes (Character Edition)
+  packageVersion: 2.0
+  assetPath: Assets/AllStarCharacterLibrary/RootAnimsFemale/Idle.controller
+  uploadId: 220426

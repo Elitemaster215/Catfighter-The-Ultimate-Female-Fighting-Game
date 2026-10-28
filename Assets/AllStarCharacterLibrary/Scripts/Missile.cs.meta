@@ -1,0 +1,22 @@
+fileFormatVersion: 2
+guid: 1ce35dae53fb1fd4bab7fb89cd2c2ac2
+timeCreated: 1498110436
+licenseType: Store
+MonoImporter:
+  serializedVersion: 2
+  defaultReferences:
+  - abc: {instanceID: 0}
+  - hitReport: {fileID: 489678, guid: f49ab410d3bd409499e3f6e2826a41e6, type: 2}
+  - particleHit: {fileID: 406114, guid: 6a9513a257006c04ca725deab6388047, type: 2}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 92811
+  packageName: Beauty and the Brutes (Character Edition)
+  packageVersion: 2.0
+  assetPath: Assets/AllStarCharacterLibrary/Scripts/Missile.cs
+  uploadId: 220426

@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 962c2dbe46a600840a50dd2cb179406a
+timeCreated: 1495818984
+licenseType: Store
+NativeFormatImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 92811
+  packageName: Beauty and the Brutes (Character Edition)
+  packageVersion: 2.0
+  assetPath: Assets/AllStarCharacterLibrary/Characters/Gladiator/materials/Gladiator.mat
+  uploadId: 220426

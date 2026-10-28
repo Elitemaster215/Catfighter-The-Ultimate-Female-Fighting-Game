@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 51bd2edc6d34726408f6e96a2c8b34c7
+timeCreated: 1513846809
+licenseType: Store
+NativeFormatImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 92811
+  packageName: Beauty and the Brutes (Character Edition)
+  packageVersion: 2.0
+  assetPath: Assets/AllStarCharacterLibrary/Characters/Kassandra/Materials/KassandraPreWraith.mat
+  uploadId: 220426

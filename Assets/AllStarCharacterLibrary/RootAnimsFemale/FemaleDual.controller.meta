@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 97dbcaea80d90fd4595e49bbbabd7e42
+timeCreated: 1450389485
+licenseType: Store
+NativeFormatImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 92811
+  packageName: Beauty and the Brutes (Character Edition)
+  packageVersion: 2.0
+  assetPath: Assets/AllStarCharacterLibrary/RootAnimsFemale/FemaleDual.controller
+  uploadId: 220426

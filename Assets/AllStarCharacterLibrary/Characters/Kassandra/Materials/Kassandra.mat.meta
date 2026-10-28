@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 0fa8e4180d6ae1a49be22bb48e424142
+timeCreated: 1495818984
+licenseType: Store
+NativeFormatImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 92811
+  packageName: Beauty and the Brutes (Character Edition)
+  packageVersion: 2.0
+  assetPath: Assets/AllStarCharacterLibrary/Characters/Kassandra/Materials/Kassandra.mat
+  uploadId: 220426

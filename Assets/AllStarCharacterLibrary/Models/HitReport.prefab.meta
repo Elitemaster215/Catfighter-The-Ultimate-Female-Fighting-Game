@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: f49ab410d3bd409499e3f6e2826a41e6
+timeCreated: 1498110415
+licenseType: Store
+NativeFormatImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 92811
+  packageName: Beauty and the Brutes (Character Edition)
+  packageVersion: 2.0
+  assetPath: Assets/AllStarCharacterLibrary/Models/HitReport.prefab
+  uploadId: 220426

@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 5ef7357f976b1d8459c299fd1972d0a8
+timeCreated: 1450288915
+licenseType: Store
+NativeFormatImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 92811
+  packageName: Beauty and the Brutes (Character Edition)
+  packageVersion: 2.0
+  assetPath: Assets/AllStarCharacterLibrary/Models/Weapons/ArrowShot.prefab
+  uploadId: 220426

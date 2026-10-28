@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: a46513c2487cfa848b23e03922ac61ca
+timeCreated: 1450375198
+licenseType: Store
+NativeFormatImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 92811
+  packageName: Beauty and the Brutes (Character Edition)
+  packageVersion: 2.0
+  assetPath: Assets/AllStarCharacterLibrary/RootAnimsFemale/FemaleSpear.controller
+  uploadId: 220426

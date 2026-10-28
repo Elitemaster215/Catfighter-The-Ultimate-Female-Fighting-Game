@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: d1afc577b0bdc5b4aa4147acfcc0dff4
+timeCreated: 1495752973
+licenseType: Store
+NativeFormatImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 92811
+  packageName: Beauty and the Brutes (Character Edition)
+  packageVersion: 2.0
+  assetPath: Assets/AllStarCharacterLibrary/Characters/Brutus/Materials/Brutus.mat
+  uploadId: 220426

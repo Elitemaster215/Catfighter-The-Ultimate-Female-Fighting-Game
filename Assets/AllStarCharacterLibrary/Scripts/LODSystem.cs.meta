@@ -1,0 +1,19 @@
+fileFormatVersion: 2
+guid: b46479a7f3c0a6646bafc4e6b0e52229
+timeCreated: 1513251672
+licenseType: Store
+MonoImporter:
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 92811
+  packageName: Beauty and the Brutes (Character Edition)
+  packageVersion: 2.0
+  assetPath: Assets/AllStarCharacterLibrary/Scripts/LODSystem.cs
+  uploadId: 220426

@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: ed3fb329aca103f41b3f63ddee92826f
+timeCreated: 1513617085
+licenseType: Store
+DefaultImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 92811
+  packageName: Beauty and the Brutes (Character Edition)
+  packageVersion: 2.0
+  assetPath: Assets/AllStarCharacterLibrary/Characters/Brutus/BrutusAdvanced.unity
+  uploadId: 220426

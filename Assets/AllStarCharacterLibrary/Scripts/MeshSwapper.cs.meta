@@ -1,0 +1,19 @@
+fileFormatVersion: 2
+guid: a580d2ae7f367d04a9e57b52dd0add97
+timeCreated: 1513496498
+licenseType: Store
+MonoImporter:
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 92811
+  packageName: Beauty and the Brutes (Character Edition)
+  packageVersion: 2.0
+  assetPath: Assets/AllStarCharacterLibrary/Scripts/MeshSwapper.cs
+  uploadId: 220426
