@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: dd612e5516b505d44adac93bfb6b62f8
+timeCreated: 1513540611
+licenseType: Store
+DefaultImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 92811
+  packageName: Beauty and the Brutes (Character Edition)
+  packageVersion: 2.0
+  assetPath: Assets/AllStarCharacterLibrary/Characters/BarbArcher/BarbArcherAdvanced.unity
+  uploadId: 220426

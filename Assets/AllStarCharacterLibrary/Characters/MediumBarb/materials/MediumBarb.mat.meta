@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: dedd3f8de6572724c8c41c0f8fc2febf
+timeCreated: 1498113945
+licenseType: Store
+NativeFormatImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 92811
+  packageName: Beauty and the Brutes (Character Edition)
+  packageVersion: 2.0
+  assetPath: Assets/AllStarCharacterLibrary/Characters/MediumBarb/materials/MediumBarb.mat
+  uploadId: 220426

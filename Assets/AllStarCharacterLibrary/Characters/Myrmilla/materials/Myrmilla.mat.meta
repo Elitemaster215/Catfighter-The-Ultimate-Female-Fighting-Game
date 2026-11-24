@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: daec49aaca4a05145b971d0499e84350
+timeCreated: 1495819001
+licenseType: Store
+NativeFormatImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 92811
+  packageName: Beauty and the Brutes (Character Edition)
+  packageVersion: 2.0
+  assetPath: Assets/AllStarCharacterLibrary/Characters/Myrmilla/materials/Myrmilla.mat
+  uploadId: 220426

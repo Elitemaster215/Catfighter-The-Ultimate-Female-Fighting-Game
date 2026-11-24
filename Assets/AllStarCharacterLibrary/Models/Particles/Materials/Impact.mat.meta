@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: cadd8e0b0286fbf42a1c8163112b93d1
+timeCreated: 1450039530
+licenseType: Store
+NativeFormatImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 92811
+  packageName: Beauty and the Brutes (Character Edition)
+  packageVersion: 2.0
+  assetPath: Assets/AllStarCharacterLibrary/Models/Particles/Materials/Impact.mat
+  uploadId: 220426

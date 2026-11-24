@@ -1,0 +1,384 @@
+fileFormatVersion: 2
+guid: fdce052a630cce1458865d92c805a723
+timeCreated: 1513772664
+licenseType: Store
+ModelImporter:
+  serializedVersion: 18
+  fileIDToRecycleName:
+    100000: Arrow
+    100002: Bow
+    100004: Bowstring
+    100006: Broadsword
+    100008: Broadsword02
+    100010: Gladius
+    100012: Gladius02
+    100014: hair10
+    100016: hair12
+    100018: hair15
+    100020: hair21
+    100022: hair22
+    100024: hair26
+    100026: hair29
+    100028: hair30
+    100030: hair32
+    100032: hair34
+    100034: Hammer
+    100036: Head
+    100038: Head_Hair_FlatTop
+    100040: Head_Hair_MediumSidePart
+    100042: Head_Hair_MediumSplit
+    100044: Head_Hair_MediumSplitB
+    100046: Head_Hair_MidPart
+    100048: Head_Hair_Modern
+    100050: Head_Hair_PonyTail
+    100052: Head_Hair_SidePart
+    100054: Head_Hair_SlickedBack
+    100056: Head_Hair_SweptBack
+    100058: Head_Hair_Thick
+    100060: Hips
+    100062: Hunter
+    100064: //RootNode
+    100066: HunterCowl
+    100068: HunterLOD1
+    100070: HunterLOD2
+    100072: HunterLOD3
+    100074: HunterLOD4
+    100076: Javelin
+    100078: L Calf
+    100080: L Clavicle
+    100082: L Finger0
+    100084: L Finger01
+    100086: L Finger02
+    100088: L Finger1
+    100090: L Finger11
+    100092: L Finger12
+    100094: L Finger2
+    100096: L Finger21
+    100098: L Finger22
+    100100: L Finger3
+    100102: L Finger31
+    100104: L Finger32
+    100106: L Finger4
+    100108: L Finger41
+    100110: L Finger42
+    100112: L Foot
+    100114: L Forearm
+    100116: L Hand
+    100118: L Thigh
+    100120: L Toe0
+    100122: L UpperArm
+    100124: L Weapon
+    100126: Longsword
+    100128: Neck
+    100130: Origin
+    100132: R Calf
+    100134: R Clavicle
+    100136: R Finger0
+    100138: R Finger01
+    100140: R Finger02
+    100142: R Finger1
+    100144: R Finger11
+    100146: R Finger12
+    100148: R Finger2
+    100150: R Finger21
+    100152: R Finger22
+    100154: R Finger3
+    100156: R Finger31
+    100158: R Finger32
+    100160: R Finger4
+    100162: R Finger41
+    100164: R Finger42
+    100166: R Foot
+    100168: R Forearm
+    100170: R Hand
+    100172: R Thigh
+    100174: R Toe0
+    100176: R UpperArm
+    100178: R Weapon
+    100180: ROOT
+    100182: Shield01
+    100184: Shield02
+    100186: Shield03
+    100188: Shield04
+    100190: Shield06
+    100192: Spear
+    100194: Spine
+    100196: Spine1
+    100198: StoneJavelin
+    100200: StoneSpear
+    400000: Arrow
+    400002: Bow
+    400004: Bowstring
+    400006: Broadsword
+    400008: Broadsword02
+    400010: Gladius
+    400012: Gladius02
+    400014: hair10
+    400016: hair12
+    400018: hair15
+    400020: hair21
+    400022: hair22
+    400024: hair26
+    400026: hair29
+    400028: hair30
+    400030: hair32
+    400032: hair34
+    400034: Hammer
+    400036: Head
+    400038: Head_Hair_FlatTop
+    400040: Head_Hair_MediumSidePart
+    400042: Head_Hair_MediumSplit
+    400044: Head_Hair_MediumSplitB
+    400046: Head_Hair_MidPart
+    400048: Head_Hair_Modern
+    400050: Head_Hair_PonyTail
+    400052: Head_Hair_SidePart
+    400054: Head_Hair_SlickedBack
+    400056: Head_Hair_SweptBack
+    400058: Head_Hair_Thick
+    400060: Hips
+    400062: Hunter
+    400064: //RootNode
+    400066: HunterCowl
+    400068: HunterLOD1
+    400070: HunterLOD2
+    400072: HunterLOD3
+    400074: HunterLOD4
+    400076: Javelin
+    400078: L Calf
+    400080: L Clavicle
+    400082: L Finger0
+    400084: L Finger01
+    400086: L Finger02
+    400088: L Finger1
+    400090: L Finger11
+    400092: L Finger12
+    400094: L Finger2
+    400096: L Finger21
+    400098: L Finger22
+    400100: L Finger3
+    400102: L Finger31
+    400104: L Finger32
+    400106: L Finger4
+    400108: L Finger41
+    400110: L Finger42
+    400112: L Foot
+    400114: L Forearm
+    400116: L Hand
+    400118: L Thigh
+    400120: L Toe0
+    400122: L UpperArm
+    400124: L Weapon
+    400126: Longsword
+    400128: Neck
+    400130: Origin
+    400132: R Calf
+    400134: R Clavicle
+    400136: R Finger0
+    400138: R Finger01
+    400140: R Finger02
+    400142: R Finger1
+    400144: R Finger11
+    400146: R Finger12
+    400148: R Finger2
+    400150: R Finger21
+    400152: R Finger22
+    400154: R Finger3
+    400156: R Finger31
+    400158: R Finger32
+    400160: R Finger4
+    400162: R Finger41
+    400164: R Finger42
+    400166: R Foot
+    400168: R Forearm
+    400170: R Hand
+    400172: R Thigh
+    400174: R Toe0
+    400176: R UpperArm
+    400178: R Weapon
+    400180: ROOT
+    400182: Shield01
+    400184: Shield02
+    400186: Shield03
+    400188: Shield04
+    400190: Shield06
+    400192: Spear
+    400194: Spine
+    400196: Spine1
+    400198: StoneJavelin
+    400200: StoneSpear
+    2300000: Arrow
+    2300002: Broadsword
+    2300004: Broadsword02
+    2300006: Gladius
+    2300008: Gladius02
+    2300010: Hammer
+    2300012: Javelin
+    2300014: Longsword
+    2300016: Shield01
+    2300018: Shield02
+    2300020: Shield03
+    2300022: Shield04
+    2300024: Shield06
+    2300026: Spear
+    2300028: StoneJavelin
+    2300030: StoneSpear
+    3300000: Arrow
+    3300002: Broadsword
+    3300004: Broadsword02
+    3300006: Gladius
+    3300008: Gladius02
+    3300010: Hammer
+    3300012: Javelin
+    3300014: Longsword
+    3300016: Shield01
+    3300018: Shield02
+    3300020: Shield03
+    3300022: Shield04
+    3300024: Shield06
+    3300026: Spear
+    3300028: StoneJavelin
+    3300030: StoneSpear
+    4300000: Arrow
+    4300002: Broadsword
+    4300004: Broadsword02
+    4300006: Gladius
+    4300008: Hammer
+    4300010: Longsword
+    4300012: Spear
+    4300014: Javelin
+    4300016: StoneSpear
+    4300018: StoneJavelin
+    4300020: Shield02
+    4300022: Shield03
+    4300024: Shield01
+    4300026: Gladius02
+    4300028: Shield04
+    4300030: Shield06
+    4300032: Bow
+    4300034: hair34
+    4300036: hair32
+    4300038: hair30
+    4300040: hair29
+    4300042: hair26
+    4300044: hair22
+    4300046: hair21
+    4300048: hair15
+    4300050: hair12
+    4300052: hair10
+    4300054: Head_Hair_MediumSplit
+    4300056: Head_Hair_MediumSplitB
+    4300058: Head_Hair_MediumSidePart
+    4300060: Head_Hair_FlatTop
+    4300062: Head_Hair_MidPart
+    4300064: Head_Hair_Modern
+    4300066: Head_Hair_PonyTail
+    4300068: Head_Hair_SidePart
+    4300070: Head_Hair_SlickedBack
+    4300072: Head_Hair_SweptBack
+    4300074: Head_Hair_Thick
+    4300076: Hunter
+    4300078: HunterCowl
+    4300080: HunterLOD1
+    4300082: HunterLOD2
+    4300084: HunterLOD3
+    4300086: HunterLOD4
+    7400000: Take 001
+    9500000: //RootNode
+    13700000: Bow
+    13700002: hair10
+    13700004: hair12
+    13700006: hair15
+    13700008: hair21
+    13700010: hair22
+    13700012: hair26
+    13700014: hair29
+    13700016: hair30
+    13700018: hair32
+    13700020: hair34
+    13700022: Head_Hair_FlatTop
+    13700024: Head_Hair_MediumSidePart
+    13700026: Head_Hair_MediumSplit
+    13700028: Head_Hair_MediumSplitB
+    13700030: Head_Hair_MidPart
+    13700032: Head_Hair_Modern
+    13700034: Head_Hair_PonyTail
+    13700036: Head_Hair_SidePart
+    13700038: Head_Hair_SlickedBack
+    13700040: Head_Hair_SweptBack
+    13700042: Head_Hair_Thick
+    13700044: Hunter
+    13700046: HunterCowl
+    13700048: HunterLOD1
+    13700050: HunterLOD2
+    13700052: HunterLOD3
+    13700054: HunterLOD4
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: .5
+    animationPositionError: .5
+    animationScaleError: .5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    splitTangentsAcrossUV: 1
+    normalImportMode: 0
+    tangentImportMode: 1
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: .5
+    foreArmTwist: .5
+    upperLegTwist: .5
+    legTwist: .5
+    armStretch: .0500000007
+    legStretch: .0500000007
+    feetSpacing: 0
+    rootMotionBoneName: 
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 92811
+  packageName: Beauty and the Brutes (Character Edition)
+  packageVersion: 2.0
+  assetPath: Assets/AllStarCharacterLibrary/Characters/Hunter/HunterAdvanced.FBX
+  uploadId: 220426

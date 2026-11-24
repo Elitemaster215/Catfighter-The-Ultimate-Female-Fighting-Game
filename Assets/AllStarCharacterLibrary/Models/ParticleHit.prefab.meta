@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 6a9513a257006c04ca725deab6388047
+timeCreated: 1498110418
+licenseType: Store
+NativeFormatImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 92811
+  packageName: Beauty and the Brutes (Character Edition)
+  packageVersion: 2.0
+  assetPath: Assets/AllStarCharacterLibrary/Models/ParticleHit.prefab
+  uploadId: 220426

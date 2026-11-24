@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: ed5184a3987c13f48aa2a3ff049a8e1b
+timeCreated: 1495818990
+licenseType: Store
+NativeFormatImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 92811
+  packageName: Beauty and the Brutes (Character Edition)
+  packageVersion: 2.0
+  assetPath: Assets/AllStarCharacterLibrary/Characters/Neptune/materials/neptune.mat
+  uploadId: 220426
