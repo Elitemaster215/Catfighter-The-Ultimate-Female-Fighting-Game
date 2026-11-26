@@ -218,6 +218,17 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 6125761192607370321, guid: 84b0b80a8ccb7024b918e1f970a49b81, type: 3}
   m_PrefabInstance: {fileID: 2596854966942179279}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &38052957 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 8000953930246526100, guid: 84b0b80a8ccb7024b918e1f970a49b81, type: 3}
+  m_PrefabInstance: {fileID: 2596854966942179279}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 38052944}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 131f0c561d51fbe4f87b18e151292a4b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PlayerController
 --- !u!1001 &44111589
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -970,7 +981,8 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
-    m_RemovedGameObjects: []
+    m_RemovedGameObjects:
+    - {fileID: 2079292938822375785, guid: c3684ce55e0f35d4ebe8f3828b474956, type: 3}
     m_AddedGameObjects:
     - targetCorrespondingSourceObject: {fileID: -8679921383154817045, guid: c3684ce55e0f35d4ebe8f3828b474956, type: 3}
       insertIndex: -1
@@ -1582,9 +1594,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0349fe16ef84d5945bfcf2ae72b89d31, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::HealthBarUI
-  fighter1Character: {fileID: 0}
+  fighter1Character: {fileID: 38052957}
   playerHealthBarImage: {fileID: 737813159}
-  fighter2Character: {fileID: 0}
+  fighter2Character: {fileID: 1234663923}
   opponentHealthBarImage: {fileID: 35268340}
   playerWinsText: {fileID: 1652491418}
   aiWinsText: {fileID: 1150515695}
@@ -4882,6 +4894,17 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 8392372113366311563, guid: 02025b27f47027e44a1f2df8fe47d399, type: 3}
   m_PrefabInstance: {fileID: 6935762022540679492}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1234663923 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 564321191193450240, guid: 02025b27f47027e44a1f2df8fe47d399, type: 3}
+  m_PrefabInstance: {fileID: 6935762022540679492}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1234663906}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c3ba01afc503b9742ad36ee6cb7c80fc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::DummyCharacter
 --- !u!1001 &1249571172
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -8644,6 +8667,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Persephone
       objectReference: {fileID: 0}
+    - target: {fileID: 2942774617169680904, guid: 84b0b80a8ccb7024b918e1f970a49b81, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6125761192607370321, guid: 84b0b80a8ccb7024b918e1f970a49b81, type: 3}
       propertyPath: m_LocalPosition.x
       value: 5
@@ -8684,6 +8711,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7234254973318967786, guid: 84b0b80a8ccb7024b918e1f970a49b81, type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: 19a499324966dee4e8e58eb9a579ae5e, type: 2}
     - target: {fileID: 8000953930246526100, guid: 84b0b80a8ccb7024b918e1f970a49b81, type: 3}
       propertyPath: knockedOutUIPanel
       value: 
@@ -8711,6 +8742,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 356373092367120640, guid: 02ca8c0eb0ca9864cb7d2103e9668c3e, type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: 19a499324966dee4e8e58eb9a579ae5e, type: 2}
     - target: {fileID: 985371134880371167, guid: 02ca8c0eb0ca9864cb7d2103e9668c3e, type: 3}
       propertyPath: opponentTarget
       value: 
@@ -8762,6 +8797,10 @@ PrefabInstance:
     - target: {fileID: 7497304974845546737, guid: 02ca8c0eb0ca9864cb7d2103e9668c3e, type: 3}
       propertyPath: m_Name
       value: Persephone (AI)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7497304974845546737, guid: 02ca8c0eb0ca9864cb7d2103e9668c3e, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -8841,10 +8880,18 @@ PrefabInstance:
       propertyPath: m_Name
       value: Athena
       objectReference: {fileID: 0}
+    - target: {fileID: 1317844705733999557, guid: 02025b27f47027e44a1f2df8fe47d399, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 2819614064387697790, guid: 02025b27f47027e44a1f2df8fe47d399, type: 3}
       propertyPath: opponentTarget
       value: 
       objectReference: {fileID: 38052952}
+    - target: {fileID: 4821106592364472869, guid: 02025b27f47027e44a1f2df8fe47d399, type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: 3634b2e3f04746c45a07835ee7eda8b7, type: 2}
     - target: {fileID: 8392372113366311563, guid: 02025b27f47027e44a1f2df8fe47d399, type: 3}
       propertyPath: m_LocalPosition.x
       value: -5

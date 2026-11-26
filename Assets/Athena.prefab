@@ -107,7 +107,7 @@ MonoBehaviour:
   maxHealth: 100
   moveSpeed: 8
   attackCooldownDuration: 1.2
-  animator: {fileID: 6846821374815982542}
+  animator: {fileID: 0}
   disableRootMotion: 1
   dampTime: 0.15
   hitboxes: []
@@ -126,7 +126,7 @@ Animator:
   m_GameObject: {fileID: 1317844705733999557}
   m_Enabled: 1
   m_Avatar: {fileID: 9000000, guid: 757ca43eb3e241e4d9a2dc6e626efba1, type: 3}
-  m_Controller: {fileID: 9100000, guid: 87e8366c235b58b4d81fe847613670d0, type: 2}
+  m_Controller: {fileID: 9100000, guid: 3b82c62b355eb8b43b50cd8e440bfc59, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -809,11 +809,6 @@ Transform:
 --- !u!4 &6845021841129612811 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -3418168949783148460, guid: 757ca43eb3e241e4d9a2dc6e626efba1, type: 3}
-  m_PrefabInstance: {fileID: 1039872374766693983}
-  m_PrefabAsset: {fileID: 0}
---- !u!95 &6846821374815982542 stripped
-Animator:
-  m_CorrespondingSourceObject: {fileID: 5866666021909216657, guid: 757ca43eb3e241e4d9a2dc6e626efba1, type: 3}
   m_PrefabInstance: {fileID: 1039872374766693983}
   m_PrefabAsset: {fileID: 0}
 --- !u!4 &7375561818596605984 stripped
