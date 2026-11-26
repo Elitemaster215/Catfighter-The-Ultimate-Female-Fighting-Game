@@ -684,7 +684,7 @@ Transform:
   m_GameObject: {fileID: 1317844705733999557}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0.7071068, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: -3.01, y: 5.218, z: -0.58}
+  m_LocalPosition: {x: -5, y: 5.13, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -738,8 +738,8 @@ Rigidbody:
   m_ImplicitTensor: 1
   m_UseGravity: 1
   m_IsKinematic: 0
-  m_Interpolate: 0
-  m_Constraints: 88
+  m_Interpolate: 1
+  m_Constraints: 124
   m_CollisionDetection: 0
 --- !u!114 &564321191193450240
 MonoBehaviour:
@@ -760,7 +760,12 @@ MonoBehaviour:
   animator: {fileID: 4821106592364472869}
   disableRootMotion: 1
   dampTime: 0.15
-  hitboxes: []
+  hitboxes:
+  - {fileID: 3804168087506252428}
+  - {fileID: 4558772740000215178}
+  - {fileID: 4938334263755266198}
+  - {fileID: 7762196263298278588}
+  - {fileID: 6591271211353111925}
   characterProfile: {fileID: 11400000, guid: f5023a673006aa84d9de7d7133f57ce8, type: 2}
   autoResetHealthOnDeath: 1
   respawnDelay: 2

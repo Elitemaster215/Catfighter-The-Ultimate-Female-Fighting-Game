@@ -1573,9 +1573,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0349fe16ef84d5945bfcf2ae72b89d31, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::HealthBarUI
-  fighter1Character: {fileID: 0}
+  fighter1Character: {fileID: 8000953930246526100, guid: 84b0b80a8ccb7024b918e1f970a49b81, type: 3}
   playerHealthBarImage: {fileID: 737813159}
-  fighter2Character: {fileID: 0}
+  fighter2Character: {fileID: 564321191193450240, guid: 02025b27f47027e44a1f2df8fe47d399, type: 3}
   opponentHealthBarImage: {fileID: 35268340}
   playerWinsText: {fileID: 1652491418}
   aiWinsText: {fileID: 1150515695}
@@ -1879,7 +1879,7 @@ Transform:
   m_GameObject: {fileID: 392933599}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0.7071068, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: -3.01, y: 5.218, z: 0}
+  m_LocalPosition: {x: -5, y: 5.13, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 1
   m_Children: []
@@ -2884,13 +2884,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 569583301}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0.7071068, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: 2.701036, y: 5.18, z: -0.251}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 5, y: 5.13, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &578540782
 PrefabInstance:
   m_ObjectHideFlags: 0
