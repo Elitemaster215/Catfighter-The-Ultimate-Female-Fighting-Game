@@ -19,10 +19,12 @@ ModelImporter:
     animationImportErrors: 
     animationImportWarnings: 
     animationRetargetingWarnings: "\nRetargeting quality report for clip 'mixamo.com':\n\tLeftFoot
-      average position error 0.4 mm and maximum position error 3.6 mm at time 0:
-      7 (17.1%) Frame 7\n\tLeftHand average position error 0.2 mm and maximum position
-      error 1.2 mm at time 0: 7 (17.1%) Frame 7\n\tRightHand average position error
-      0.6 mm and maximum position error 1.9 mm at time 1: 0 (73.2%) Frame 30\n"
+      average position error 1.0 mm and maximum position error 11.3 mm at time 0:
+      8 (19.5%) Frame 8\n\tRightFoot average position error 0.2 mm and maximum position
+      error 2.3 mm at time 0:11 (26.8%) Frame 11\n\tLeftHand average position error
+      0.8 mm and maximum position error 1.9 mm at time 0: 7 (17.1%) Frame 7\n\tRightHand
+      average position error 2.7 mm and maximum position error 6.4 mm at time 1:
+      5 (85.4%) Frame 35\n"
     animationDoRetargetingWarnings: 1
     importAnimatedCustomProperties: 0
     importConstraints: 0
@@ -33,7 +35,36 @@ ModelImporter:
     animationWrapMode: 0
     extraExposedTransformPaths: []
     extraUserProperties: []
-    clipAnimations: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: Walking
+      takeName: mixamo.com
+      internalID: -203655887218126122
+      firstFrame: 0
+      lastFrame: 41
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 1
+      loopBlendPositionY: 1
+      loopBlendPositionXZ: 1
+      keepOriginalOrientation: 1
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 1
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
     isReadable: 0
   meshes:
     lODScreenPercentages: []
