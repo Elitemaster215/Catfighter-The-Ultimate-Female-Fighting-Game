@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::CharacterProfileSO
   characterName: Athena
   characterPortrait: {fileID: 21300000, guid: 643d6f0204d8bdd47a1965de6ce932ba, type: 3}
-  characterPrefab: {fileID: 919132149155446097, guid: 757ca43eb3e241e4d9a2dc6e626efba1, type: 3}
+  characterPrefab: {fileID: 1317844705733999557, guid: 02025b27f47027e44a1f2df8fe47d399, type: 3}
   maxHealth: 100
   moveSpeed: 8
   characterMass: 1

@@ -762,7 +762,7 @@ Rigidbody:
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 0
+  m_Constraints: 112
   m_CollisionDetection: 0
 --- !u!114 &564321191193450240
 MonoBehaviour:
@@ -828,7 +828,7 @@ MonoBehaviour:
   engageState: {fileID: 3720067557965920877}
   attackState: {fileID: 6911014288668772360}
   knockOutState: {fileID: 1188048729979100278}
-  opponentTarget: {fileID: 6125761192607370321, guid: 84b0b80a8ccb7024b918e1f970a49b81, type: 3}
+  opponentTarget: {fileID: 0}
   character: {fileID: 564321191193450240}
 --- !u!114 &8501643067926513483
 MonoBehaviour:
