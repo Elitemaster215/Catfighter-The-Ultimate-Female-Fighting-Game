@@ -5,11 +5,11 @@ using TMPro;
 public class HealthBarUI : MonoBehaviour
 {
     [Header("Player Health Bar")]
-    public BaseCharacter fighter1Character;
+    [SerializeField] private BaseCharacter playerCharacter;
     [SerializeField] private Image playerHealthBarImage;
 
     [Header("Opponent Health Bar")]
-    public BaseCharacter fighter2Character;
+    [SerializeField] private BaseCharacter opponentCharacter;
     [SerializeField] private Image opponentHealthBarImage;
 
     //Oct 30 
@@ -23,17 +23,17 @@ public class HealthBarUI : MonoBehaviour
     {
         // Displays current round score (e.g. "Rounds: 1 / 2")
         if (playerWinsText != null)
-            playerWinsText.text = $"Points: {MatchData.Fighter1Wins}";
+            playerWinsText.text = $"Wins: {MatchData.PlayerWins}";
 
         if (aiWinsText != null)
-            aiWinsText.text = $"Points: {MatchData.Fighter2Wins}";
+            aiWinsText.text = $"Wins: {MatchData.AIWins}";
     }
 
     // Update is called once per frame
     void Update()
     {
-        UpdateHealthDisplay(fighter1Character, playerHealthBarImage);
-        UpdateHealthDisplay(fighter2Character, opponentHealthBarImage);
+        UpdateHealthDisplay(playerCharacter, playerHealthBarImage);
+        UpdateHealthDisplay(opponentCharacter, opponentHealthBarImage);
     }
 
     private void UpdateHealthDisplay(BaseCharacter  character, Image fillImage)

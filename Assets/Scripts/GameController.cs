@@ -1,17 +1,18 @@
-using System.Collections.Generic;
-using Unity.Cinemachine;
 using UnityEngine;
 using UnityEngine.InputSystem;
 using UnityEngine.SceneManagement;
-using UnityEngine.UI;
+using Unity.Cinemachine;
+using System.Collections.Generic;
+using Unity.VisualScripting.Antlr3.Runtime.Tree;
 
-public enum GameMode { PlayerVsAI, AIvsAI };
+public enum GameMode { PlayerVsAI, AIvsAI }; // Game Mode Enum
+
 
 public class GameController : MonoBehaviour
 {
-    [SerializeField] private string mainMenuSceneName = "MainMenu";
+    [SerializeField] private string mainMenuSceneName = "MainMenuScene";
     [SerializeField] private InputActionProperty mainMenuInputAction;
-    [SerializeField] public GameObject characterSelectionPanel;
+    [SerializeField] private GameObject characterSelectionPanel;
     [SerializeField] private GameObject gameHUDPanel;
     [SerializeField] private HealthBarUI healthBarUI;
 
@@ -32,13 +33,41 @@ public class GameController : MonoBehaviour
     private GameObject fighter1Instance;
     private GameObject fighter2Instance;
 
-    [Header("UI Images")]
-    [SerializeField] private Image PvA;
-    [SerializeField] private Image AvA;
-    [SerializeField] private Sprite activeImage;
-    [SerializeField] private Sprite disabledImage;
+    public AudioManager audioManager;
 
-    public static bool fightOngoing = false;
+
+    private void Start()
+    {
+        if (!MatchData.IsMatchInProgess)
+        {
+            if (characterSelectionPanel != null) characterSelectionPanel.SetActive(true);
+            if (gameHUDPanel != null) gameHUDPanel.SetActive(false);
+        }
+        else
+        {
+            SpawnFighters(MatchData.SelectedGameMode);
+            CloseCharacterSelectionPanel();
+        }
+
+        Cursor.visible = true;
+        Cursor.lockState = CursorLockMode.None;
+
+        PlayMusic();
+
+    }
+
+    private void PlayMusic()
+    {
+        if (audioManager != null)
+        {
+            audioManager.playMusic();
+        }
+        else
+        {
+            Debug.Log("Audio manager is null");
+        }
+    }
+
     private void OnEnable()
     {
         mainMenuInputAction.action?.Enable();
@@ -48,67 +77,26 @@ public class GameController : MonoBehaviour
     {
         mainMenuInputAction.action?.Disable();
     }
-    private void Start()
-    {
-        PvA.sprite = activeImage;
-        AvA.sprite = disabledImage;
-
-        if (MatchData.fightOngoing == true)
-        {
-            CloseCharacterSelectionPanel();
-            if (MatchData.matchisPvAI == true) { SpawnFighters(GameMode.PlayerVsAI); }
-            else if (MatchData.matchisPvAI == false) { SpawnFighters(GameMode.AIvsAI); }
-        }
-        else
-        {
-            Cursor.visible = true;
-            Cursor.lockState = CursorLockMode.None;
-        }
-    }
-
-    private void Update()
-    {
-        if(mainMenuInputAction.action != null && mainMenuInputAction.action.WasPressedThisFrame())
-        {
-            ReturnToMainMenu();
-        }
-    }
 
     public void ReturnToMainMenu()
     {
-        Debug.Log("Returning to main menu");
+        Debug.Log("Returning to the main menu");
         SceneManager.LoadScene(mainMenuSceneName);
-        fightOngoing = false;
     }
 
+    //UI Button Handler for Player Vs AI
     public void SelectPlayerVsAI()
     {
-        PvA.sprite = activeImage;
-        AvA.sprite = disabledImage;
-        MatchData.matchisPvAI = true;
+        //Spawn fighters
+        SpawnFighters(GameMode.PlayerVsAI);
+        CloseCharacterSelectionPanel();
     }
 
     //UI Button Handler for AI vs AI
     public void SelectAIVsAI()
     {
-        PvA.sprite = disabledImage;
-        AvA.sprite = activeImage;
-        MatchData.matchisPvAI = false;
-    }
-
-    public void StartGame()
-    {
-        //Spawn fighters
-        if (MatchData.matchisPvAI == true)
-        {
-            SpawnFighters(GameMode.PlayerVsAI);
-            CloseCharacterSelectionPanel();
-        }
-        else if (MatchData.matchisPvAI == false)
-        {
-            SpawnFighters(GameMode.AIvsAI);
-            CloseCharacterSelectionPanel();
-        }
+        SpawnFighters(GameMode.AIvsAI);
+        CloseCharacterSelectionPanel();
     }
 
     // Set the opponent targets for the AI in the AI brain
@@ -135,13 +123,18 @@ public class GameController : MonoBehaviour
                 brain2.KnockOutState.SetIsFigher1(false);
             }
         }
-
-        healthBarUI.fighter1Character = fighter1Instance.GetComponent<BaseCharacter>();
-        healthBarUI.fighter2Character = fighter2Instance.GetComponent<BaseCharacter>();
     }
 
-    private void UpdateHeathBarUI()
+
+
+    // Setting the character refrences for the health bars
+    private void UpdateHealthBarUI()
     {
+        if (healthBarUI == null || fighter1Instance == null || fighter2Instance == null || gameHUDPanel == null) return;
+
+        gameHUDPanel.SetActive(true);
+        healthBarUI.fighter1Character = fighter1Instance.GetComponent<BaseCharacter>();
+        healthBarUI.fighter2Character = fighter2Instance.GetComponent<BaseCharacter>();
 
     }
 
@@ -167,6 +160,8 @@ public class GameController : MonoBehaviour
 
     }
 
+
+
     public void SpawnFighters(GameMode mode)
     {
         // Destroy any existing fighters
@@ -180,18 +175,22 @@ public class GameController : MonoBehaviour
         }
         else if (mode == GameMode.AIvsAI)
         {
-            fighter1Instance = Instantiate(aiFighter2Prefab, spawnPoint1.position, spawnPoint1.rotation);
-            fighter2Instance = Instantiate(aiFighter1Prefab, spawnPoint2.position, spawnPoint2.rotation);
+            fighter1Instance = Instantiate(aiFighter1Prefab, spawnPoint1.position, spawnPoint1.rotation);
+            fighter2Instance = Instantiate(aiFighter2Prefab, spawnPoint2.position, spawnPoint2.rotation);
         }
+
+        MatchData.IsMatchInProgess = true;
+        MatchData.SelectedGameMode = mode;
 
         InitializeFighterConnections();
         UpdateCinemachineTargetGroup();
-        UpdateHeathBarUI();
-    }
+        UpdateHealthBarUI();
 
+       
+    }
     public void CloseCharacterSelectionPanel()
     {
-        if(characterSelectionPanel != null)
+        if (characterSelectionPanel != null)
         {
             characterSelectionPanel.SetActive(false);
         }
@@ -203,4 +202,5 @@ public class GameController : MonoBehaviour
         Cursor.visible = false;
         Cursor.lockState = CursorLockMode.Locked;
     }
+
 }
