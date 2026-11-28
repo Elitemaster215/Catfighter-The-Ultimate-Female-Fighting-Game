@@ -34,7 +34,10 @@ public class GameController : MonoBehaviour
     private GameObject fighter2Instance;
 
     public AudioManager audioManager;
+    private object activeImage;
 
+    public object PvA { get; private set; }
+    public object AvA { get; private set; }
 
     private void Start()
     {
@@ -201,6 +204,20 @@ public class GameController : MonoBehaviour
 
         Cursor.visible = false;
         Cursor.lockState = CursorLockMode.Locked;
+    }
+    public void StartGame()
+    {
+        //Spawn fighters
+        if (MatchData.matchisPvAI == true)
+        {
+            SpawnFighters(GameMode.PlayerVsAI);
+            CloseCharacterSelectionPanel();
+        }
+        else if (MatchData.matchisPvAI == false)
+        {
+            SpawnFighters(GameMode.AIvsAI);
+            CloseCharacterSelectionPanel();
+        }
     }
 
 }

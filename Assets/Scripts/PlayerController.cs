@@ -6,7 +6,7 @@ using UnityEngine.SceneManagement;
 public class PlayerController : BaseCharacter
 {
     [Header("Knockout & UI Settings")]
-    [SerializeField] private GameObject knockedOutUIPanel; // Oct 27th 
+    public GameObject knockedOutUIPanel; // Oct 27th 
     [SerializeField] private float showUIPanelDelay = 1.0f;
     [SerializeField] private float sceneResetDelay = 3.0f;
 
@@ -41,7 +41,7 @@ public class PlayerController : BaseCharacter
 
     protected override void OnDeath()
     {
-        base.OnDeath(); 
+        base.OnDeath();
 
         // 1. Disable player input component to lock controls
         if (playerInput != null) playerInput.enabled = false;
@@ -60,10 +60,11 @@ public class PlayerController : BaseCharacter
         StartCoroutine(KnockoutSequenceRoutine());
     }
 
+
     private IEnumerator KnockoutSequenceRoutine()
     {
         // Award round win to AI opponent
-        MatchData.AIWins++;
+        MatchData.Fighter2Wins++;
 
         yield return new WaitForSeconds(showUIPanelDelay);
 
@@ -76,20 +77,21 @@ public class PlayerController : BaseCharacter
         yield return new WaitForSeconds(sceneResetDelay);
 
         // Evaluate Match Winner vs Next Round
-        if (MatchData.HasAIWonMatch())
+        if (MatchData.HasFighter2WonMatch())
         {
-            Debug.Log($"MATCH OVER: AI Wins the Match! ({MatchData.AIWins} - {MatchData.PlayerWins})");
+            Debug.Log($"MATCH OVER: AI Wins the Match! ({MatchData.Fighter2Wins} - {MatchData.Fighter1Wins})");
             // Reset scores if player restarts match or returns to main menu
             MatchData.ResetMatch();
             SceneManager.LoadScene(SceneManager.GetActiveScene().name);
         }
         else
         {
-            Debug.Log($"ROUND OVER: AI leads ({MatchData.AIWins} - {MatchData.PlayerWins})");
+            Debug.Log($"ROUND OVER: AI leads ({MatchData.Fighter2Wins} - {MatchData.Fighter1Wins})");
             // Reload scene for next round
             SceneManager.LoadScene(SceneManager.GetActiveScene().name);
         }
     }
+
 
     private void FixedUpdate()
     {

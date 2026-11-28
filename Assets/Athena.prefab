@@ -661,13 +661,13 @@ GameObject:
   - component: {fileID: 8392372113366311563}
   - component: {fileID: 3307057859454691504}
   - component: {fileID: 5567682480125296942}
-  - component: {fileID: 564321191193450240}
   - component: {fileID: 4821106592364472869}
-  - component: {fileID: 2819614064387697790}
-  - component: {fileID: 8501643067926513483}
-  - component: {fileID: 3720067557965920877}
-  - component: {fileID: 6911014288668772360}
-  - component: {fileID: 1188048729979100278}
+  - component: {fileID: 2335589959130058809}
+  - component: {fileID: 4414970316566221841}
+  - component: {fileID: 7612207194685231177}
+  - component: {fileID: 6319480368572627282}
+  - component: {fileID: 3708200730591744597}
+  - component: {fileID: 3121583201212297904}
   m_Layer: 0
   m_Name: Athena
   m_TagString: Untagged
@@ -741,36 +741,6 @@ Rigidbody:
   m_Interpolate: 1
   m_Constraints: 124
   m_CollisionDetection: 0
---- !u!114 &564321191193450240
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1317844705733999557}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c3ba01afc503b9742ad36ee6cb7c80fc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::DummyCharacter
-  currentHealth: 100
-  maxHealth: 100
-  moveSpeed: 8
-  attackCooldownDuration: 1.2
-  animator: {fileID: 4821106592364472869}
-  disableRootMotion: 1
-  dampTime: 0.15
-  hitboxes:
-  - {fileID: 3804168087506252428}
-  - {fileID: 4558772740000215178}
-  - {fileID: 4938334263755266198}
-  - {fileID: 7762196263298278588}
-  - {fileID: 6591271211353111925}
-  characterProfile: {fileID: 11400000, guid: f5023a673006aa84d9de7d7133f57ce8, type: 2}
-  autoResetHealthOnDeath: 1
-  respawnDelay: 2
-  dummyRenderer: {fileID: 2507961529147577099}
-  hitColor: {r: 1, g: 0, b: 0, a: 1}
 --- !u!95 &4821106592364472869
 Animator:
   serializedVersion: 7
@@ -793,7 +763,7 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
---- !u!114 &2819614064387697790
+--- !u!114 &2335589959130058809
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -802,17 +772,23 @@ MonoBehaviour:
   m_GameObject: {fileID: 1317844705733999557}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6c8a42879e70a9e48bb85169670d7a02, type: 3}
+  m_Script: {fileID: 11500000, guid: beee05fb890f6244685c52ac84b7f2e4, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::AIBrain
-  initialState: {fileID: 8501643067926513483}
-  idleState: {fileID: 8501643067926513483}
-  engageState: {fileID: 3720067557965920877}
-  attackState: {fileID: 6911014288668772360}
-  knockOutState: {fileID: 1188048729979100278}
-  opponentTarget: {fileID: 0}
-  character: {fileID: 564321191193450240}
---- !u!114 &8501643067926513483
+  m_EditorClassIdentifier: Assembly-CSharp::DummyCharacter
+  currentHealth: 100
+  maxHealth: 100
+  moveSpeed: 8
+  attackCooldownDuration: 1.2
+  animator: {fileID: 4821106592364472869}
+  disableRootMotion: 1
+  dampTime: 0.15
+  hitboxes: []
+  characterProfile: {fileID: 11400000, guid: f5023a673006aa84d9de7d7133f57ce8, type: 2}
+  autoResetHealthOnDeath: 1
+  respawnDelay: 2
+  dummyRenderer: {fileID: 2507961529147577099}
+  hitColor: {r: 1, g: 0, b: 0, a: 1}
+--- !u!114 &4414970316566221841
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -821,11 +797,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 1317844705733999557}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1613dbeedd2af9442ab751df319b8a19, type: 3}
+  m_Script: {fileID: 11500000, guid: 3816b3d037a35a344a85c762e1f02a87, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::AIIdleState
   idleDuration: 5
---- !u!114 &3720067557965920877
+--- !u!114 &7612207194685231177
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -834,7 +810,26 @@ MonoBehaviour:
   m_GameObject: {fileID: 1317844705733999557}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c826a937579035f4a9d0e41e37d97484, type: 3}
+  m_Script: {fileID: 11500000, guid: 796ed0f817c763a458c9ed215f238ffa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::AIBrain
+  initialState: {fileID: 4414970316566221841}
+  idleState: {fileID: 4414970316566221841}
+  engageState: {fileID: 6319480368572627282}
+  attackState: {fileID: 3708200730591744597}
+  knockOutState: {fileID: 3121583201212297904}
+  opponentTarget: {fileID: 6125761192607370321, guid: 84b0b80a8ccb7024b918e1f970a49b81, type: 3}
+  character: {fileID: 2335589959130058809}
+--- !u!114 &6319480368572627282
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1317844705733999557}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6c5d12ffee0a3a447b6844c0379a7773, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::AIEngageState
   idealAttackDistance: 2
@@ -842,7 +837,7 @@ MonoBehaviour:
   startRetreatDistance: 1
   rotationSpeed: 10
   aiDampTime: 0.05
---- !u!114 &6911014288668772360
+--- !u!114 &3708200730591744597
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -851,13 +846,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 1317844705733999557}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 40416be5e36a26c4b8f767918d4f87d1, type: 3}
+  m_Script: {fileID: 11500000, guid: eaa229a5fc81a644e9a929a8b76f5ebd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::AIAttackState
   attackStateDuration: 1.2
   faceTargetRotationSpeed: 5
   heavyAttackChance: 0.5
---- !u!114 &1188048729979100278
+--- !u!114 &3121583201212297904
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -866,7 +861,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1317844705733999557}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: eb53b2abf3a78cc4f85be4d8822e8ef7, type: 3}
+  m_Script: {fileID: 11500000, guid: 494cb2ae282e54e48b8b6b143d4de851, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::AIKnockOutState
   knockOutPanel: {fileID: 0}
@@ -1504,7 +1499,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6100321207726793792}
   - component: {fileID: 5771327672786346127}
-  - component: {fileID: 6591271211353111925}
+  - component: {fileID: 3309742739520878054}
   m_Layer: 0
   m_Name: Right Foot Hitbox
   m_TagString: Untagged
@@ -1548,7 +1543,7 @@ SphereCollider:
   serializedVersion: 3
   m_Radius: 0.5
   m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &6591271211353111925
+--- !u!114 &3309742739520878054
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1557,15 +1552,16 @@ MonoBehaviour:
   m_GameObject: {fileID: 2690884919990564762}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 44afd0f5040fd8a41a515dfcda979443, type: 3}
+  m_Script: {fileID: 11500000, guid: 0574572e9ed726c4395346310dd71c1d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Hitbox
   hitboxID: RightFoot
   damageAmount: 15
   knockbackForce: 10
   attackerSource: {fileID: 1317844705733999557}
-  audioSource: {fileID: 0}
-  gruntAudio: {fileID: 0}
+  hitEffectPrefab: {fileID: 0}
+  effectDestroyDelay: 1
+  targetOffsetDistance: 0.15
 --- !u!1 &2710107243951125989
 GameObject:
   m_ObjectHideFlags: 0
@@ -1978,7 +1974,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4903863572736341739}
   - component: {fileID: 323682243288606392}
-  - component: {fileID: 4558772740000215178}
+  - component: {fileID: 120575227475528288}
   m_Layer: 0
   m_Name: Left Hand Hitbox
   m_TagString: Untagged
@@ -2022,7 +2018,7 @@ SphereCollider:
   serializedVersion: 3
   m_Radius: 0.5
   m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &4558772740000215178
+--- !u!114 &120575227475528288
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -2031,15 +2027,16 @@ MonoBehaviour:
   m_GameObject: {fileID: 3307294457159165592}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 44afd0f5040fd8a41a515dfcda979443, type: 3}
+  m_Script: {fileID: 11500000, guid: 0574572e9ed726c4395346310dd71c1d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Hitbox
-  hitboxID: Left Hand
+  hitboxID: LeftHand
   damageAmount: 15
   knockbackForce: 10
   attackerSource: {fileID: 1317844705733999557}
-  audioSource: {fileID: 0}
-  gruntAudio: {fileID: 0}
+  hitEffectPrefab: {fileID: 0}
+  effectDestroyDelay: 1
+  targetOffsetDistance: 0.15
 --- !u!1 &3615741172977134465
 GameObject:
   m_ObjectHideFlags: 0
@@ -2459,7 +2456,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5027897192845304014}
   - component: {fileID: 1731463167303792621}
-  - component: {fileID: 4938334263755266198}
+  - component: {fileID: 853436672853311097}
   m_Layer: 0
   m_Name: Right Hand Hitbox
   m_TagString: Untagged
@@ -2503,7 +2500,7 @@ SphereCollider:
   serializedVersion: 3
   m_Radius: 0.5
   m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &4938334263755266198
+--- !u!114 &853436672853311097
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -2512,15 +2509,16 @@ MonoBehaviour:
   m_GameObject: {fileID: 5044030609918591957}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 44afd0f5040fd8a41a515dfcda979443, type: 3}
+  m_Script: {fileID: 11500000, guid: 0574572e9ed726c4395346310dd71c1d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Hitbox
   hitboxID: RightHand
   damageAmount: 15
   knockbackForce: 10
   attackerSource: {fileID: 1317844705733999557}
-  audioSource: {fileID: 0}
-  gruntAudio: {fileID: 0}
+  hitEffectPrefab: {fileID: 5238538877814813142, guid: 47096eff328e11a418ace7db2d72aa97, type: 3}
+  effectDestroyDelay: 1
+  targetOffsetDistance: 0.15
 --- !u!1 &5243104006589071734
 GameObject:
   m_ObjectHideFlags: 0
@@ -2531,7 +2529,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8816138584743818396}
   - component: {fileID: 7759056998713162185}
-  - component: {fileID: 1953999333572224545}
+  - component: {fileID: 4075014316846772629}
   m_Layer: 0
   m_Name: Hurtbox
   m_TagString: Untagged
@@ -2575,7 +2573,7 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: -1.826041e-15, y: 0, z: 0.3018979}
---- !u!114 &1953999333572224545
+--- !u!114 &4075014316846772629
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -2584,7 +2582,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 5243104006589071734}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 21b3716983394d64eb3a6e81cd58d1ed, type: 3}
+  m_Script: {fileID: 11500000, guid: 10f73699ee52c964bb3127b849271044, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Hurtbox
   ownerEntity: {fileID: 1317844705733999557}
@@ -3046,7 +3044,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2879236903232899689}
   - component: {fileID: 4476905662128280293}
-  - component: {fileID: 7762196263298278588}
+  - component: {fileID: 3818282554988406685}
   m_Layer: 0
   m_Name: Left Foot Hitbox
   m_TagString: Untagged
@@ -3090,7 +3088,7 @@ SphereCollider:
   serializedVersion: 3
   m_Radius: 0.5
   m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &7762196263298278588
+--- !u!114 &3818282554988406685
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -3099,15 +3097,16 @@ MonoBehaviour:
   m_GameObject: {fileID: 7401143182901827803}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 44afd0f5040fd8a41a515dfcda979443, type: 3}
+  m_Script: {fileID: 11500000, guid: 0574572e9ed726c4395346310dd71c1d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Hitbox
-  hitboxID: Left Foot
+  hitboxID: LeftFoot
   damageAmount: 15
   knockbackForce: 10
   attackerSource: {fileID: 1317844705733999557}
-  audioSource: {fileID: 0}
-  gruntAudio: {fileID: 0}
+  hitEffectPrefab: {fileID: 0}
+  effectDestroyDelay: 1
+  targetOffsetDistance: 0.15
 --- !u!1 &7489323984558929209
 GameObject:
   m_ObjectHideFlags: 0
@@ -3308,7 +3307,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4525959472034245494}
   - component: {fileID: 4924357427576465041}
-  - component: {fileID: 3804168087506252428}
+  - component: {fileID: 8612713743730582619}
   m_Layer: 0
   m_Name: Head Hitbox
   m_TagString: Untagged
@@ -3352,7 +3351,7 @@ SphereCollider:
   serializedVersion: 3
   m_Radius: 0.5
   m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &3804168087506252428
+--- !u!114 &8612713743730582619
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -3361,15 +3360,16 @@ MonoBehaviour:
   m_GameObject: {fileID: 8157840850071122287}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 44afd0f5040fd8a41a515dfcda979443, type: 3}
+  m_Script: {fileID: 11500000, guid: 0574572e9ed726c4395346310dd71c1d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Hitbox
   hitboxID: Head
   damageAmount: 15
   knockbackForce: 10
   attackerSource: {fileID: 1317844705733999557}
-  audioSource: {fileID: 0}
-  gruntAudio: {fileID: 0}
+  hitEffectPrefab: {fileID: 0}
+  effectDestroyDelay: 1
+  targetOffsetDistance: 0.15
 --- !u!1 &8198017540050762425
 GameObject:
   m_ObjectHideFlags: 0

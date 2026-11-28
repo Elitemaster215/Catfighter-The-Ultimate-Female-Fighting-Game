@@ -984,11 +984,12 @@ GameObject:
   - component: {fileID: 6125761192607370321}
   - component: {fileID: 5069798702120445654}
   - component: {fileID: 5725310981577439099}
-  - component: {fileID: 8000953930246526100}
   - component: {fileID: 10178608408378675}
   - component: {fileID: 6168333866238919787}
   - component: {fileID: 8710121232595402646}
   - component: {fileID: 7234254973318967786}
+  - component: {fileID: 5562875526683871630}
+  - component: {fileID: 5061933465510528132}
   m_Layer: 0
   m_Name: Persephone
   m_TagString: Untagged
@@ -1004,14 +1005,14 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2942774617169680904}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0.7071068, z: 0, w: 0.7071068}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 5, y: 5.13, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 8269456332560728210}
   m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!136 &5069798702120445654
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -1062,38 +1063,6 @@ Rigidbody:
   m_Interpolate: 1
   m_Constraints: 124
   m_CollisionDetection: 0
---- !u!114 &8000953930246526100
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2942774617169680904}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 131f0c561d51fbe4f87b18e151292a4b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::PlayerController
-  currentHealth: 100
-  maxHealth: 100
-  moveSpeed: 8
-  attackCooldownDuration: 1.2
-  animator: {fileID: 7234254973318967786}
-  disableRootMotion: 1
-  dampTime: 0.15
-  hitboxes:
-  - {fileID: 2334728479033030290}
-  - {fileID: 743560707982293370}
-  - {fileID: 4841942566356565111}
-  - {fileID: 6893288542585807518}
-  - {fileID: 7193324702865627144}
-  characterProfile: {fileID: 11400000, guid: 2290bae89f8256b46b0815de64651c0f, type: 2}
-  knockedOutUIPanel: {fileID: 0}
-  showUIPanelDelay: 1
-  sceneResetDelay: 3
-  jump: {x: 0, y: 0, z: 0}
-  jumpForce: 2
-  isGrounded: 0
 --- !u!82 &10178608408378675
 AudioSource:
   m_ObjectHideFlags: 0
@@ -1340,6 +1309,47 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &5562875526683871630
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2942774617169680904}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 24dbcca619ab39c4891068f2c0174313, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PlayerController
+  currentHealth: 100
+  maxHealth: 100
+  moveSpeed: 8
+  attackCooldownDuration: 1.2
+  animator: {fileID: 7234254973318967786}
+  disableRootMotion: 1
+  dampTime: 0.15
+  hitboxes:
+  - {fileID: 5090010592644189358}
+  - {fileID: 2498205431959930332}
+  - {fileID: 7860541582418279663}
+  - {fileID: 3027222741937655676}
+  - {fileID: 2386880839218442955}
+  characterProfile: {fileID: 11400000, guid: 2290bae89f8256b46b0815de64651c0f, type: 2}
+  knockedOutUIPanel: {fileID: 0}
+  showUIPanelDelay: 1
+  sceneResetDelay: 3
+--- !u!114 &5061933465510528132
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2942774617169680904}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0158771f1782c924cbd13b7c9e2a6801, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::AnimationEventForwarder
 --- !u!1 &3177908487863200358
 GameObject:
   m_ObjectHideFlags: 0
@@ -1810,7 +1820,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4541003424336387276}
   - component: {fileID: 5852664152516856383}
-  - component: {fileID: 2334728479033030290}
+  - component: {fileID: 5090010592644189358}
   m_Layer: 0
   m_Name: Head Hitbox
   m_TagString: Untagged
@@ -1854,7 +1864,7 @@ SphereCollider:
   serializedVersion: 3
   m_Radius: 0.5
   m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &2334728479033030290
+--- !u!114 &5090010592644189358
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1863,15 +1873,16 @@ MonoBehaviour:
   m_GameObject: {fileID: 4386041974646153337}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 44afd0f5040fd8a41a515dfcda979443, type: 3}
+  m_Script: {fileID: 11500000, guid: 0574572e9ed726c4395346310dd71c1d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Hitbox
   hitboxID: Head
   damageAmount: 15
   knockbackForce: 10
   attackerSource: {fileID: 2942774617169680904}
-  audioSource: {fileID: 0}
-  gruntAudio: {fileID: 0}
+  hitEffectPrefab: {fileID: 0}
+  effectDestroyDelay: 1
+  targetOffsetDistance: 0.15
 --- !u!1 &4523836475324203480
 GameObject:
   m_ObjectHideFlags: 0
@@ -2762,7 +2773,7 @@ GameObject:
   m_Component:
   - component: {fileID: 118706044124078085}
   - component: {fileID: 5162079226667466751}
-  - component: {fileID: 4841942566356565111}
+  - component: {fileID: 7860541582418279663}
   m_Layer: 0
   m_Name: Right Hand Hitbox
   m_TagString: Untagged
@@ -2806,7 +2817,7 @@ SphereCollider:
   serializedVersion: 3
   m_Radius: 0.5
   m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &4841942566356565111
+--- !u!114 &7860541582418279663
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -2815,15 +2826,16 @@ MonoBehaviour:
   m_GameObject: {fileID: 6954102120373160143}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 44afd0f5040fd8a41a515dfcda979443, type: 3}
+  m_Script: {fileID: 11500000, guid: 0574572e9ed726c4395346310dd71c1d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Hitbox
   hitboxID: RightHand
   damageAmount: 15
   knockbackForce: 10
   attackerSource: {fileID: 2942774617169680904}
-  audioSource: {fileID: 0}
-  gruntAudio: {fileID: 0}
+  hitEffectPrefab: {fileID: 5238538877814813142, guid: 47096eff328e11a418ace7db2d72aa97, type: 3}
+  effectDestroyDelay: 1
+  targetOffsetDistance: 0.15
 --- !u!1 &6957093057012789785
 GameObject:
   m_ObjectHideFlags: 0
@@ -2988,7 +3000,7 @@ GameObject:
   m_Component:
   - component: {fileID: 233797744762962925}
   - component: {fileID: 2879420904649323792}
-  - component: {fileID: 7193324702865627144}
+  - component: {fileID: 2386880839218442955}
   m_Layer: 0
   m_Name: Right Foot Hitbox
   m_TagString: Untagged
@@ -3032,7 +3044,7 @@ SphereCollider:
   serializedVersion: 3
   m_Radius: 0.5
   m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &7193324702865627144
+--- !u!114 &2386880839218442955
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -3041,15 +3053,16 @@ MonoBehaviour:
   m_GameObject: {fileID: 7626107131421858161}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 44afd0f5040fd8a41a515dfcda979443, type: 3}
+  m_Script: {fileID: 11500000, guid: 0574572e9ed726c4395346310dd71c1d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Hitbox
   hitboxID: RightFoot
   damageAmount: 15
   knockbackForce: 10
   attackerSource: {fileID: 2942774617169680904}
-  audioSource: {fileID: 0}
-  gruntAudio: {fileID: 0}
+  hitEffectPrefab: {fileID: 0}
+  effectDestroyDelay: 1
+  targetOffsetDistance: 0.15
 --- !u!1 &7839151453854154273
 GameObject:
   m_ObjectHideFlags: 0
@@ -3060,7 +3073,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1905310740737345465}
   - component: {fileID: 2162834967481207974}
-  - component: {fileID: 743560707982293370}
+  - component: {fileID: 2498205431959930332}
   m_Layer: 0
   m_Name: Left Hand Hitbox
   m_TagString: Untagged
@@ -3104,7 +3117,7 @@ SphereCollider:
   serializedVersion: 3
   m_Radius: 0.5
   m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &743560707982293370
+--- !u!114 &2498205431959930332
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -3113,15 +3126,16 @@ MonoBehaviour:
   m_GameObject: {fileID: 7839151453854154273}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 44afd0f5040fd8a41a515dfcda979443, type: 3}
+  m_Script: {fileID: 11500000, guid: 0574572e9ed726c4395346310dd71c1d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Hitbox
-  hitboxID: Left Hand
+  hitboxID: LeftHand
   damageAmount: 15
   knockbackForce: 10
   attackerSource: {fileID: 2942774617169680904}
-  audioSource: {fileID: 0}
-  gruntAudio: {fileID: 0}
+  hitEffectPrefab: {fileID: 0}
+  effectDestroyDelay: 1
+  targetOffsetDistance: 0.15
 --- !u!1 &7867850033754791825
 GameObject:
   m_ObjectHideFlags: 0
@@ -3196,7 +3210,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4696672983237035318}
   - component: {fileID: 3760329826885684228}
-  - component: {fileID: 6893288542585807518}
+  - component: {fileID: 3027222741937655676}
   m_Layer: 0
   m_Name: Left Foot Hitbox
   m_TagString: Untagged
@@ -3240,7 +3254,7 @@ SphereCollider:
   serializedVersion: 3
   m_Radius: 0.5
   m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &6893288542585807518
+--- !u!114 &3027222741937655676
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -3249,15 +3263,16 @@ MonoBehaviour:
   m_GameObject: {fileID: 7893725404712758047}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 44afd0f5040fd8a41a515dfcda979443, type: 3}
+  m_Script: {fileID: 11500000, guid: 0574572e9ed726c4395346310dd71c1d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Hitbox
-  hitboxID: Left Foot
+  hitboxID: LeftFoot
   damageAmount: 15
   knockbackForce: 10
   attackerSource: {fileID: 2942774617169680904}
-  audioSource: {fileID: 0}
-  gruntAudio: {fileID: 0}
+  hitEffectPrefab: {fileID: 0}
+  effectDestroyDelay: 1
+  targetOffsetDistance: 0.15
 --- !u!1 &7995112070488015686
 GameObject:
   m_ObjectHideFlags: 0
@@ -3369,7 +3384,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1808804098234569323}
   - component: {fileID: 5138181864357698888}
-  - component: {fileID: 8717426415204178397}
+  - component: {fileID: 7146131282743743382}
   m_Layer: 0
   m_Name: Hurtbox
   m_TagString: Untagged
@@ -3413,7 +3428,7 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: -1.826041e-15, y: 0, z: 0.3018979}
---- !u!114 &8717426415204178397
+--- !u!114 &7146131282743743382
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -3422,7 +3437,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 8366455529832016955}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 21b3716983394d64eb3a6e81cd58d1ed, type: 3}
+  m_Script: {fileID: 11500000, guid: 10f73699ee52c964bb3127b849271044, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Hurtbox
   ownerEntity: {fileID: 2942774617169680904}

@@ -1,15 +1,15 @@
+using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
-using TMPro;
 
 public class HealthBarUI : MonoBehaviour
 {
     [Header("Player Health Bar")]
-    [SerializeField] private BaseCharacter playerCharacter;
+    public BaseCharacter fighter1Character;
     [SerializeField] private Image playerHealthBarImage;
 
     [Header("Opponent Health Bar")]
-    [SerializeField] private BaseCharacter opponentCharacter;
+    public BaseCharacter fighter2Character;
     [SerializeField] private Image opponentHealthBarImage;
 
     //Oct 30 
@@ -23,17 +23,17 @@ public class HealthBarUI : MonoBehaviour
     {
         // Displays current round score (e.g. "Rounds: 1 / 2")
         if (playerWinsText != null)
-            playerWinsText.text = $"Wins: {MatchData.PlayerWins}";
+            playerWinsText.text = $"Player Wins: {MatchData.Fighter1Wins}";
 
         if (aiWinsText != null)
-            aiWinsText.text = $"Wins: {MatchData.AIWins}";
+            aiWinsText.text = $"Opponent Wins: {MatchData.Fighter2Wins}";
     }
 
     // Update is called once per frame
     void Update()
     {
-        UpdateHealthDisplay(playerCharacter, playerHealthBarImage);
-        UpdateHealthDisplay(opponentCharacter, opponentHealthBarImage);
+        UpdateHealthDisplay(fighter1Character, playerHealthBarImage);
+        UpdateHealthDisplay(fighter2Character, opponentHealthBarImage);
     }
 
     private void UpdateHealthDisplay(BaseCharacter  character, Image fillImage)

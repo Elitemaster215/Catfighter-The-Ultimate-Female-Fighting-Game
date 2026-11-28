@@ -9,11 +9,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 32588edde3b2f004fab5ec5d94e9e519, type: 3}
+  m_Script: {fileID: 11500000, guid: 7f3d84479ec0b954fa7222024d2eba96, type: 3}
   m_Name: Persephone (AI)
   m_EditorClassIdentifier: Assembly-CSharp::CharacterProfileSO
-  characterName: Default Fighter
-  characterPortrait: {fileID: 21300000, guid: f1c0990cc88d8224e9cd227efc1038f5, type: 3}
+  characterName: Persephone (AI)
+  characterPortrait: {fileID: 21300000, guid: f750b06e3e6e44743a65ed4416354c3f, type: 3}
   characterPrefab: {fileID: 7497304974845546737, guid: 02ca8c0eb0ca9864cb7d2103e9668c3e, type: 3}
   maxHealth: 100
   moveSpeed: 8
